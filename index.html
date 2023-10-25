@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,7 +20,7 @@
 
   <body class="font-productsans">
     <nav
-      class="fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-white dark:border-gray-600 dark:bg-gray-900"
+      class="bark:border-gray-600 bark:bg-gray-900 fixed top-0 left-0 z-20 w-full border-b border-gray-200 bg-white"
     >
       <div
         class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
@@ -33,21 +32,23 @@
             alt="LangBuds Logo"
           />
           <span
-            class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
+            class="bark:text-white self-center whitespace-nowrap text-2xl font-semibold"
             >LangBuds</span
           >
         </a>
         <div class="flex md:order-2">
-          <button
-            type="button"
-            class="mr-3 rounded-lg bg-blue-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:mr-0"
-          >
-            Order Now
-          </button>
+          <a href="./comingsoon.html" target="_blank">
+            <button
+              type="button"
+              class="bark:bg-blue-600 bark:hover:bg-blue-700 bark:focus:ring-blue-800 mr-3 rounded-lg bg-blue-700 px-2 lg:px-8 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 md:mr-0"
+            >
+              Order Now
+            </button>
+          </a>
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+            class="bark:text-gray-400 bark:hover:bg-gray-700 bark:focus:ring-gray-600 inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
@@ -74,41 +75,34 @@
           id="navbar-sticky"
         >
           <ul
-            class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900"
+            class="bark:border-gray-700 bark:bg-gray-800 md:bark:bg-gray-900 mt-4 ml-auto flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0"
           >
             <li>
               <a
-                href="#"
-                class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                href="#home"
+                class="bark:border-gray-700 bark:text-white bark:hover:bg-gray-700 bark:hover:text-white md:bark:hover:bg-transparent md:bark:hover:text-blue-500 block rounded py-4 px-10 text-gray-900 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                 aria-current="page"
                 >Home</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                href="#product"
+                class="bark:border-gray-700 bark:text-white bark:hover:bg-gray-700 bark:hover:text-white md:bark:hover:bg-transparent md:bark:hover:text-blue-500 block rounded py-4 px-10 text-gray-900 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                 >Product</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
-                >Pricing</a
+                href="#about"
+                class="bark:border-gray-700 bark:text-white bark:hover:bg-gray-700 bark:hover:text-white md:bark:hover:bg-transparent md:bark:hover:text-blue-500 block rounded py-4 px-10 text-gray-900 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
+                >About</a
               >
             </li>
             <li>
               <a
-                href="#"
-                class="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                href="#contactus"
+                class="bark:border-gray-700 bark:text-white bark:hover:bg-gray-700 bark:hover:text-white md:bark:hover:bg-transparent md:bark:hover:text-blue-500 block rounded py-4 px-10 text-gray-900 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-blue-700"
                 >Contact</a
               >
             </li>
@@ -116,25 +110,29 @@
         </div>
       </div>
     </nav>
-    <section class="bg-white dark:bg-gray-900" id="home">
+    <section
+      class="bark:bg-gray-900 mx-auto max-w-screen-xl bg-white"
+      id="home"
+    >
       <div
         class="mx-auto grid max-w-screen-xl px-4 py-32 lg:grid-cols-12 lg:gap-8 lg:py-36 xl:gap-0"
       >
-        <div class="mr-auto place-self-center lg:col-span-7">
+        <div class="mr-auto mb-8 place-self-center lg:col-span-7 lg:mb-0">
           <h1
-            class="mb-8 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl lg:leading-5 xl:text-6xl"
+            class="bark:text-white mb-8 max-w-2xl text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:leading-5 xl:text-6xl"
           >
             Real-time language translation right in to your ears
           </h1>
           <p
-            class="mb-8 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl"
+            class="bark:text-gray-400 mb-8 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl"
           >
             A simple and lightwight product that can translate many language in
             real time.
           </p>
           <a
-            href="#"
-            class="mr-5 inline-flex animate-pulse items-center justify-center rounded-lg border border-gray-300 bg-blue-700 px-5 py-3 text-center text-base font-medium text-white shadow-md hover:bg-blue-800 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            href="./comingsoon.html"
+            target="_blank"
+            class="bark:border-gray-700 bark:text-white bark:hover:bg-gray-700 bark:focus:ring-gray-800 mr-5 inline-flex animate-pulse items-center justify-center rounded-lg border border-gray-300 bg-blue-700 px-8 py-3 text-center text-base font-medium text-white shadow-md hover:bg-blue-800 focus:ring-4 focus:ring-gray-100"
           >
             Order Now
             <svg
@@ -151,8 +149,8 @@
             </svg>
           </a>
           <a
-            href="#"
-            class="inline-flex items-center justify-center rounded-lg border border-gray-300 px-5 py-3 text-center text-base font-medium text-gray-900 shadow-md hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            href="#product"
+            class="bark:border-gray-700 bark:text-white bark:hover:bg-gray-700 bark:focus:ring-gray-800 inline-flex items-center justify-center rounded-lg border border-gray-300 px-5 py-3 text-center text-base font-medium text-gray-900 shadow-md hover:bg-gray-100 focus:ring-4 focus:ring-gray-100"
           >
             Read More
           </a>
@@ -162,9 +160,11 @@
         </div>
       </div>
     </section>
-
-    <section class="body-font text-gray-600">
-      <div class="container mx-auto flex flex-wrap px-5 py-24">
+    <section
+      class="body-font container mx-auto max-w-screen-xl text-gray-600"
+      id="product"
+    >
+      <div class="container mx-auto flex flex-wrap px-5 py-5 lg:py-24">
         <div class="mb-10 w-full overflow-hidden rounded-lg lg:mb-0 lg:w-1/2">
           <img
             alt="feature"
@@ -195,7 +195,7 @@
               <h2 class="title-font mb-3 text-lg font-medium text-gray-900">
                 Real-time Translation
               </h2>
-              <p class="text-base leading-relaxed">
+              <p class="text-justify text-base leading-relaxed">
                 This device can accurately translate a foreign language in
                 real-time using the <b>Deepl</b> translation api.
               </p>
@@ -239,7 +239,7 @@
               <h2 class="title-font mb-3 text-lg font-medium text-gray-900">
                 Language support
               </h2>
-              <p class="text-base leading-relaxed">
+              <p class="text-justify text-base leading-relaxed">
                 Our product supports more than 60 languages at the time of
                 release. We will keep adding support for more languages with
                 time.
@@ -281,7 +281,7 @@
               <h2 class="title-font mb-3 text-lg font-medium text-gray-900">
                 Privacy friendly
               </h2>
-              <p class="text-base leading-relaxed">
+              <p class="text-justify text-base leading-relaxed">
                 Our product is more privacy friendly because it does not use
                 google translate in the backend.
               </p>
@@ -304,7 +304,7 @@
         </div>
       </div>
     </section>
-    <section class="body-font text-gray-600">
+    <section class="body-font mx-auto max-w-screen-xl text-gray-600" id="about">
       <div class="container mx-auto flex flex-wrap px-5 py-24">
         <div class="flex w-full flex-wrap">
           <div class="md:w-1/2 md:py-6 md:pr-10 lg:w-2/5">
@@ -335,7 +335,7 @@
                 >
                   STEP 1
                 </h2>
-                <p class="leading-relaxed">
+                <p class="text-justify leading-relaxed">
                   You set your language in our app. The LangBuds will try to
                   translate everything to this language.
                 </p>
@@ -368,7 +368,7 @@
                 >
                   STEP 2
                 </h2>
-                <p class="leading-relaxed">
+                <p class="text-justify leading-relaxed">
                   Whenever someone withing one meter radius of you try to speak
                   to you in a foreign language, the LangBuds will detect the
                   speech and the language of the speech.
@@ -403,7 +403,7 @@
                 >
                   STEP 3
                 </h2>
-                <p class="leading-relaxed"></p>
+                <p class="text-justify leading-relaxed"></p>
                 Then the LangBuds will translate the speech using
                 <b>Deepl</b> translation API. After the translation process it
                 will will turn the text to a computer generated speech.
@@ -437,7 +437,7 @@
                 >
                   STEP 4
                 </h2>
-                <p class="leading-relaxed">
+                <p class="text-justify leading-relaxed">
                   It will play the computer generated speech in your ear.
                 </p>
               </div>
@@ -465,7 +465,7 @@
                 >
                   FINISH
                 </h2>
-                <p class="leading-relaxed">
+                <p class="text-justify leading-relaxed">
                   As a result of this process, you can understand languages that
                   you can't understand otherwise.
                 </p>
@@ -473,14 +473,17 @@
             </div>
           </div>
           <img
-            class="mt-12 rounded-lg object-cover object-center p-32 md:mt-0 md:w-1/2 lg:w-3/5"
+            class="mt-64 ml-auto rounded-lg md:mt-0 md:w-1/2 lg:h-4/5 lg:w-3/5"
             src="./air3.png"
             alt="step"
           />
         </div>
       </div>
     </section>
-    <section class="body-font text-gray-600">
+    <section
+      class="body-font mx-auto max-w-screen-xl text-gray-600"
+      id="testimonials"
+    >
       <div class="container mx-auto px-5 py-24">
         <h1
           class="title-font mb-12 text-center text-3xl font-medium text-gray-900"
@@ -553,7 +556,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="h-12 w-12 flex-shrink-0 rounded-full object-cover mt-6"
+                  class="lg:mt-12 h-12 w-12 flex-shrink-0 rounded-full object-cover"
                 >
                   <path
                     stroke-linecap="round"
@@ -562,7 +565,7 @@
                   />
                 </svg>
 
-                <span class="flex flex-grow flex-col pl-4 mt-6">
+                <span class="flex flex-grow flex-col pl-4 lg:mt-12">
                   <span class="title-font font-medium text-gray-900"
                     >Aveek Patra</span
                   >
@@ -574,15 +577,15 @@
         </div>
       </div>
     </section>
-    <section class="bg-white dark:bg-gray-900">
+    <section class="mx-auto max-w-screen-xl bg-white py-16" id="contactus">
       <div class="mx-auto max-w-screen-md py-8 px-4 lg:py-16">
         <h2
-          class="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+          class="mb-4 text-center text-4xl font-extrabold tracking-tight text-gray-900"
         >
           Contact Us
         </h2>
         <p
-          class="mb-8 text-center font-light text-gray-500 dark:text-gray-400 sm:text-xl lg:mb-16"
+          class="mb-8 text-center font-light text-gray-500 sm:text-xl lg:mb-16"
         >
           Got a technical issue? Want to send feedback about a beta feature?
           Need details about our Business plan? Let us know.
@@ -591,13 +594,13 @@
           <div>
             <label
               for="email"
-              class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
+              class="mb-2 block text-sm font-medium text-gray-900"
               >Your email</label
             >
             <input
               type="email"
               id="email"
-              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm"
               placeholder="name@email.com"
               required
             />
@@ -605,13 +608,13 @@
           <div>
             <label
               for="subject"
-              class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-300"
+              class="mb-2 block text-sm font-medium text-gray-900"
               >Subject</label
             >
             <input
               type="text"
               id="subject"
-              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              class="focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm"
               placeholder="Let us know how we can help you"
               required
             />
@@ -619,19 +622,19 @@
           <div class="sm:col-span-2">
             <label
               for="message"
-              class="mb-2 block text-sm font-medium text-gray-900 dark:text-gray-400"
+              class="mb-2 block text-sm font-medium text-gray-900"
               >Your message</label
             >
             <textarea
               id="message"
               rows="6"
-              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+              class="focus:ring-primary-500 focus:border-primary-500 bark:focus:ring-primary-500 bark:focus:border-primary-500 bark:border-gray-600 bark:bg-gray-700 bark:text-white bark:placeholder-gray-400 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm"
               placeholder="Leave a comment..."
             ></textarea>
           </div>
           <button
             type="submit"
-            class="focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 rounded-lg bg-blue-700 py-3 px-5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 sm:w-fit"
+            class="focus:ring-primary-300 bark:bg-primary-600 bark:hover:bg-primary-700 bark:focus:ring-primary-800 rounded-lg bg-blue-700 py-3 px-5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 w-full lg:w-1/4"
           >
             Send message
           </button>
@@ -639,7 +642,7 @@
       </div>
     </section>
 
-    <footer class="body-font text-gray-600">
+    <footer class="body-font mx-auto max-w-screen-xl text-gray-600">
       <div
         class="container mx-auto flex flex-col items-center px-5 py-8 sm:flex-row"
       >
